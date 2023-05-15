@@ -1,0 +1,34 @@
+.header_image {
+  width: 100vw;
+  height: 100vh;
+  background-image: url("/img/background_main_image.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.header__all_pages{
+  width: 100vw;
+  height: 100vh;
+  background-image: url("../img/background_all.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.header {
+  position: absolute;
+  width: 100%;
+  left: 0;
+  top: 0;
+  z-index: 30;
+}
+
+.navigation__ul {
+  display: flex;
+  align-items: center;
+}
+
+.navigation__ul li:not(:last-child) {
+  margin-right: 20px;
+}
