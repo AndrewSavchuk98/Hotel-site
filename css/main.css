@@ -76,18 +76,34 @@ main {
     color: white;
 }
 
-.card__h {
-    display: flex;
-    justify-content: space-between;
-    padding: 8px;
-    align-items: center;
-    align-content: center;
-}
-.price{
-    text-decoration: white;
+
+.main_name{
+    color: orange;
+    font-size: 66px;
 }
 
-.room-card p {
-    text-align: left;
-    padding: 8px;
+.all_main_name{
+    color: orange;
+}
+
+#sale_h2{
+    font-style: italic;
+}
+
+#booking_h2{
+    margin-bottom: 30px;
+    font-style: italic;
+}
+
+.button_booking {
+    background-color: orange;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 10px;
+    text-decoration: none;
+}
+
+/* Hover effect for the button */
+.button_booking:hover {
+    background-color: darkorange;
 }
