@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html>
+<html lang="ru">
 <head>
+    <meta charset="utf-8">
     <style>
-        /* Form container */
-        .form-container {
+        .reservation-details {
             max-width: 400px;
             margin: 0 auto;
             padding: 20px;
@@ -11,70 +11,48 @@
             border-radius: 5px;
         }
 
-        /* Form inputs */
-        .form-group {
+        .reservation-details h3 {
+            text-align: center;
             margin-bottom: 20px;
         }
 
-        label {
-            display: block;
-            margin-bottom: 5px;
+        .details-row {
+            margin-bottom: 10px;
+        }
+
+        .label {
             font-weight: bold;
-            color: #333;
         }
 
-        input[type="date"],
-        input[type="number"] {
-            width: 380px;
-            padding: 10px;
-            border: 1px solid #ccc;
-            border-radius: 4px;
-            font-size: 14px;
-        }
-        .button_booking__input {
-            display: block;
-            width: 360px;
-            text-align: center;
-            color: white;
-            border: none;
-            cursor: pointer;
-            font-size: 16px;
-            background-color: orange;
-            padding: 10px 20px;
-            border-radius: 10px;
-            text-decoration: none;
+        .service-list {
+            padding: 0;
+            margin: 0;
+            list-style: none;
         }
 
-        .button_booking__input:hover {
-            background-color: darkorange;
+        .service-list li {
+            margin-bottom: 5px;
         }
     </style>
+    <title></title>
 </head>
 <body>
-<div class="form-container">
-    <form>
-        <div class="form-group">
-            <label for="check-in-date">Check-in Date:</label>
-            <input type="date" id="check-in-date" name="check-in-date" required>
-        </div>
 
-        <div class="form-group">
-            <label for="check-out-date">Check-out Date:</label>
-            <input type="date" id="check-out-date" name="check-out-date" required>
-        </div>
 
-        <div class="form-group">
-            <label for="adults">Adults:</label>
-            <input type="number" id="adults" name="adults" min="1" required>
-        </div>
 
-        <div class="form-group">
-            <label for="kids">Kids:</label>
-            <input type="number" id="kids" name="kids" min="0" required>
-        </div>
+    <div class="details-row">
+        <span class="label">Additional Services:</span>
+        <ul class="service-list">
+            <li>Breakfast: $15 per day</li>
+            <li>Wi-Fi: Free</li>
+        </ul>
+    </div>
 
-        <a href="rooms.html" class="button_booking__input">Booking Now</a>
-    </form>
+    <div class="details-row">
+        <span class="label">Room Price:</span>
+        <span class="value">$150 per night</span>
+    </div>
 </div>
+
 </body>
 </html>
